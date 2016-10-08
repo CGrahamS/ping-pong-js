@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PingPong</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    {{content-for "head"}}
-
-    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link rel="stylesheet" href="{{rootURL}}assets/ping-pong.css">
-
-    {{content-for "head-footer"}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/pingpong-interface.js"></script>
+    <script type="text/javascript" src="js/pingpong.js"></script>
+    <title>Ping Pong</title>
   </head>
   <body>
-    {{content-for "body"}}
-
-    <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/ping-pong.js"></script>
-
-    {{content-for "body-footer"}}
+    <form id="ping-pong-form">
+      <label for="goal">Enter a number:</label>
+      <input id="goal" type="number">
+      <button type="submit">Submit</button>
+    </form>
+    <ul id="solution"></ul>
   </body>
 </html>
